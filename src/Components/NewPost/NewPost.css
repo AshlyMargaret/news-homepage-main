@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Inter regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../fonts/static/Inter-Regular.ttf') ;
+  }
+.newPost{
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 25px;
+    /* border-bottom: 1px solid white; */
+    
+}
+.newPostPara p{
+    font-family: Inter regular;
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+}
+
+h4:hover{
+    cursor: pointer;
+    color: hsl(35, 77%, 62%);
+}

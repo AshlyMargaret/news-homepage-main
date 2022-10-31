@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Inter regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../fonts/static/Inter-Regular.ttf') ;
+  }
+.header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+.navSec a{
+   text-decoration: none;
+   color: hsl(236, 13%, 42%);
+   font-weight: 400;
+   font-size: 15px;
+   font-family: Inter regular;   
+}
+.navSec ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.navSec ul li{
+    list-style: none;
+}
+.menuIcon{
+    display: none;
+}
+
+.HideMenu{
+    width: 200px;
+    height: 355px;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    right: -1px;
+    top: -19px;
+    display: none;
+}
+
+.iconMenuClose{
+    text-align: right;
+   
+}
+
+.iconMenuClose img{
+    width: 20px;
+}
+
+.HideMenu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.HideMenu ul li{
+    list-style: none;
+}
+.HideMenu a{
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+}
+
+/* Media Query */
+
+@media screen and (max-width: 767px){
+    .navSec{
+        display: none;
+    }
+    .menuIcon{
+        display: block;
+    }
+  }
+  

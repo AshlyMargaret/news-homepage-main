@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Inter regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../fonts/static/Inter-Regular.ttf') ;
+  }
+.rowPost{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.rowPost img{
+    width: 85px;
+}
+.descPara p{
+    max-width: 215px;
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+    font-weight: 400;
+}
+.descSec{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.descPara{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'Inter regular';
+}
+
+.descPara h5{
+  cursor: pointer;
+  color:hsl(240, 100%, 5%)
+}
+
+.descPara h5:hover{
+    color: hsl(5, 85%, 63%);
+}
+
+.descTitle h2{
+    color: hsl(233, 8%, 79%);
+}
+
+
+

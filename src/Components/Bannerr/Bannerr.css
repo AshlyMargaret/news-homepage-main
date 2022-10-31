@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Inter regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../fonts/static/Inter-Regular.ttf') ;
+  }
+.banner{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+.bannerImage{
+    background-image: url('../../images/image-web-3-desktop.jpg');
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 300px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.bannerLeftBottom{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.leftBottom h1{
+    width: 214px;
+}
+.rightBottom{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.rightside{
+    background-color:hsl(240, 100%, 5%);
+    padding-left: 20px;
+    padding-top: 25px;
+}
+.rightBottom_ParagraphText p{
+ max-width: 460px;
+ font-family: Inter regular;
+ font-size: 15px;
+ color: hsl(236, 13%, 42%);
+ font-weight: 400;
+}
+.rightBottonButton button{
+    width: 150px;
+    padding: 12px;
+    color: white;
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    cursor: pointer;
+    font-family: Inter regular;
+}
+
+.rightBottonButton button:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+
+.newTitle h1{
+   
+    color: hsl(35, 77%, 62%);
+}
+.newpostSec{
+    margin-top: 30px;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 767px){
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .bannerLeftBottom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bannerImage{
+        background-image: url('../../images/image-web-3-mobile.jpg');
+        background-color: #cccccc; /* Used if the image is unavailable */
+        height: 300px; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+    }
+    .rightBottom_ParagraphText p {
+        max-width: 351px;
+    }
+    .newPostPara p{
+        width: 300px;
+    }
+}
